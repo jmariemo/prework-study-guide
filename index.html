@@ -26,6 +26,34 @@
       <section class="card" id="git-section">
       <h2>Git</h2>
       <ul>
+        <li>Git is a project-based version control system.</li>
+        <li>Git projects have one central branch main with multiple feature branches for 
+          amendments AKA versions.</li>
+        <li>The first step to creating a local development version is to create a feature branch.</br> 
+          This is the branch where we will be adding our new code.</br>
+          Our default branch is called main, but master may also be seen in older repos.</br> 
+          Do not code directly in the main branch. Instead, branch off of main and create 
+          a feature branch, which is a copy of the main branch used to add something new to the project. 
+          That way, we maintain the main branch and we can track the changes that were made to it 
+          via the feature branches.</br>
+        <li>A branch is a copy or version of the code that can be worked on independently in isolation 
+          so development changes do not disrupt other team members who are also working on the code 
+          and testing their solutions. When we are typically working on code, it is in an unstable 
+          state since we are actively developing the code.</li>
+        <li>It is important that amendments and updates are always worked on within feature branches before
+          adhering to the main branch.</br>
+          This allows for flexibility between editing versions, and ease when debugging.</li>
+        <li>A pull request, or PR, is used to merge a comparison branch 
+          (in our case, the feature branch) into the base branch.</li>
+        <li>1. Navigate to desired directory with local repo.</br>
+          2. git status to check which branch we are in. If in main branch, git checkout to create feature branch.</br>
+          3. git status to confirm in new branch. looking for "working tree clean" message.</br>
+          4. Edit and save file as desired.</br>
+          5. git add -A to stage the changes in local repo</br>
+          6. git commit -m "brief, precise, descriptive message summarizing changes"</br>
+          7. git pull origin main to make sure local and main repo match, look for already up to date message</br>
+          8. git push origin feature/branch-name</li>
+        <li>git add -A: adds a change in the working directory to the staging area. Tells Git that you want to include updates to a particular file in the next commit.</li>
         <li>git status: checks what branch we are currently on</li>
         <li>git checkout -b branch-name: creates a new branch and switches to said new branch.</li>
         <li>Every project in bootcamp must include README...</br>
